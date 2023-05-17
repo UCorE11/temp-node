@@ -1,0 +1,10 @@
+const {readFileSync,writeFileSync}=require('fs')
+console.log('start')
+const first=readFileSync('./7-fs/content/subfolder/text.txt','utf8')
+const second=readFileSync('./7-fs/content/subfolder/text1.txt','utf8')
+console.log(first)
+console.log(second)
+writeFileSync('./7-fs/content/subfolder/result-text.txt',`here is the result :${first}`)
+console.log('done with this task')
+console.log('starting the next one')
+// fs=filesync
